@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Store</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header id="navabr" class="py-5">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div>
+            <img src="./assets/images/logo/logo-1.webp" alt="" />
+          </div>
+          <ul class="hidden md:flex gap-4 md:gap-8">
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Home</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Shop</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Blog</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> About</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Contact</a>
+            </li>
+          </ul>
+          <!-- <ul class="md:hidden">
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Home1</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Shop</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Blog</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> About</a>
+            </li>
+            <li class="font-Montserrat text-base text-text_color">
+              <a href="#"> Contact</a>
+            </li>
+          </ul> -->
+          <div class="flex gap-4 md:gap-5">
+            <button class="bg-[#F2F2F2] py-1 px-2 rounded-full">
+              <i class="ph ph-heart text-base md:text-xl text-p_text"></i>
+            </button>
+            <button class="bg-[#F2F2F2] py-1 px-2 rounded-full">
+              <i
+                class="ph ph-shopping-cart text-base md:text-xl text-p_text"
+              ></i>
+            </button>
+            <button class="bg-[#F2F2F2] py-1 px-2 rounded-full hidden md:block">
+              <i class="ph ph-user-circle text-base md:text-xl text-p_text"></i>
+            </button>
+            <button
+              id="menu-button"
+              class="bg-[#F2F2F2] py-1 px-2 rounded-full md:hidden"
+            >
+              <i class="ph ph-list text-base md:text-xl text-p_text"></i>
+            </button>
+            <!-- <button class="bg-[#F2F2F2] py-1 px-2 rounded-full md:hidden"><i class="ph ph-x  text-base md:text-xl text-p_text"></i></button> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Started -->
+    <section id="hero" class="">
+      <div class="hero-bg h-full xl:h-[calc(100vh-88px)] bg-cover bg-no-repeat bg-center">
+        <div class="container h-full flex justify-center items-center">
+          <div class="grid md:grid-cols-2 gap-6">
+          <!-- <div class="flex flex-col md:flex-row justify-center items-center gap-6"> -->
+            <div class="py-10 xl:py-16">
+              <h5
+                class="text-white font-Montserrat font-semibold text-sm lg:text-base mb-5 lg:mb-4"
+              >
+                All Natural Products
+              </h5>
+              <div class="relative">
+                <h3
+                  class="text-white font-Playfair font-extrabold text-[32px] xl:text-[72px] mb-5 xl:mb-4"
+                >
+                  Healthy food &
+                  <span class="text-[#D64647]">Organic</span> market
+                </h3>
+                <img
+                  class="absolute top-[-80px] right-[187px] xl:block hidden"
+                  src="./assets/images/hero/leaf.webp"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-white font-Montserrat text-xs lg:text-sm mb-5 xl:mb-[74px]"
+              >
+                Exotic food is food produced by methods that <br />
+                company with the standards of organic farming
+              </p>
+              <button
+                class="bg-white text-primary_3 font-Montserrat font-semibold text-base py-2 xl:py-4 px-10 xl:px-12 rounded xl:rounded-xl"
+              >
+                Shop now
+              </button>
+            </div>
+            <div class="py-5">
+              <img
+                class="h-full w-full"
+                src="./assets/images/hero/hero.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+  </body>
+
+  <script src="./assets/plugin/jquery-3.6.4.min.js"></script>
+  <script src="./assets/plugin/swiper-bundle.min.js"></script>
+  <script src="./assets/js/common.js"></script>
+</html>
