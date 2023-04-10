@@ -10,3 +10,8 @@
     background-image: url('../assets/images/hero/hero-background.webp');
  }
 /* Background End */
+
+.categories:hover svg path{
+   fill:white;
+   
+}
