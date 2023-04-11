@@ -35,12 +35,14 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         Playfair: ["Playfair Display", "sans-serif"],
+        NotoSans: ["Noto Sans", "sans-serif"],
       },
 
       colors: {
         text_color: "#071C1F",
         p_text: "#606060",
         primary_3: "#47A358",
+        csk:"#91BF73"
       },
     },
   },
