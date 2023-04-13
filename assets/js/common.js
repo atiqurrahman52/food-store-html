@@ -71,3 +71,19 @@ var swiper8 = new Swiper(".highestSelling", {
 // Highest Selling Courses started
 
 // Swiper Js End 
+
+
+// Accordion started
+let accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach((acco) => {
+  accordions[0].click();
+  accordions[0].click();
+  acco.onclick = () => {
+    accordions.forEach((subAcco) => {
+      subAcco.classList.remove("active");
+    });
+    acco.classList.add("active");
+  };
+});
+// Accordion ended
