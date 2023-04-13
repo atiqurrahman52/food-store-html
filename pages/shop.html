@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Food Store</title>
+  <title>Shop</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -54,9 +54,7 @@
       </div>
     </div>
   </header>
-
-  <!-- For Mobile  -->
-
+    <!-- For Mobile  -->
   <div class="menu-list bg-white hidden fixed inset-0 z-10 h-screen w-full">
     <div class="flex items-center justify-center">
       <ul class="gap-4 md:gap-8 space-y-3 mt-28  w-full px-6">
@@ -125,10 +123,525 @@
   </div>
   <!-- Navbar End -->
 
+  <!-- Sub Header Started -->
+  <section id="sub_header">
+    <div class="sub-header h-[300px] bg-cover bg-center bg-no-repeat hidden md:block">
+     <div class="flex flex-col justify-center items-center h-full">
+      <h3 class="font-Playfair font-black text-xl md:text-5xl text-text_color mb-[14px]">Shop Page</h3>
+     
+      <div class="relative">
+        <input type="" name="search" placeholder="Search For products (eggs, milk, Broccoli)" class="bg- text-p_text w-[508px] h-[50px] px-4 pr-10 rounded-2xl  text-sm focus:outline-none">
+        <button  class="absolute right-0  top-1/2 -translate-y-1/2 mr-4">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.9998 19.0008L13.8028 13.8038M13.8028 13.8038C15.2094 12.3972 15.9996 10.4895 15.9996 8.50028C15.9996 6.51108 15.2094 4.60336 13.8028 3.19678C12.3962 1.79021 10.4885 1 8.49931 1C6.51011 1 4.60238 1.79021 3.19581 3.19678C1.78923 4.60336 0.999023 6.51108 0.999023 8.50028C0.999023 10.4895 1.78923 12.3972 3.19581 13.8038C4.60238 15.2104 6.51011 16.0006 8.49931 16.0006C10.4885 16.0006 12.3962 15.2104 13.8028 13.8038Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </button>
+      </div>
+     </div>
+      
+    </div>
+
+    <!-- for mobile  -->
+    <div class="sub-header-mobile h-[180px] bg-cover bg-center bg-no-repeat md:hidden">
+     <div class="flex flex-col justify-center items-center h-full">
+      <h3 class="font-Playfair font-black text-xl md:text-5xl text-text_color mb-5">Shop Page</h3>
+      <div class="relative">
+        <input type="" name="search" placeholder="Search For products" class="bg- text-p_text w-[230pxpx] h-10 px-4 pr-10 rounded-2xl  text-sm focus:outline-none">
+        <button  class="absolute right-0  top-1/2 -translate-y-1/2 mr-4">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.9998 19.0008L13.8028 13.8038M13.8028 13.8038C15.2094 12.3972 15.9996 10.4895 15.9996 8.50028C15.9996 6.51108 15.2094 4.60336 13.8028 3.19678C12.3962 1.79021 10.4885 1 8.49931 1C6.51011 1 4.60238 1.79021 3.19581 3.19678C1.78923 4.60336 0.999023 6.51108 0.999023 8.50028C0.999023 10.4895 1.78923 12.3972 3.19581 13.8038C4.60238 15.2104 6.51011 16.0006 8.49931 16.0006C10.4885 16.0006 12.3962 15.2104 13.8028 13.8038Z" stroke="#606060" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </button>
+      </div>
+     </div>
+    </div>
+    
+  </section>
+  <!-- Sub Header End -->
+
+  <!-- shop page Started  -->
+  <section id="shop">
+    <div class="container">
+      <div class="py-8 md:py-10">
+        <div class="flex justify-between mb-6">
+          <button class="flex items-center justify-betwee space-x-7 md:space-x-[116px] bg-[#F5F5F5] py-2 md:py-[11px] px-3 md:px-6 rounded md:rounded-2xl">
+           <h2 class="font-NotoSans text-xs md:text-base text-text_color">Categories</h2>
+            <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 1V9M9 5H1" stroke="#071C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </span>
+          </button>
+
+          <button class="flex items-center justify-betwee space-x-7 md:space-x-[116px] bg-[#F5F5F5] py-2 md:py-[11px] px-3 md:px-6 rounded md:rounded-2xl">
+            <h2 class="font-NotoSans text-xs md:text-base text-text_color">Categories</h2>
+             <span><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M5 1V9M9 5H1" stroke="#071C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+               </span>
+           </button>
+        </div>
+                      
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/banana.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Vegan Thai Banana
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/cucumber.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Fresh Cucumber
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/pepper.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Red Capsicum
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/grape.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Juicy Grapes
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/pine-apple.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Pine Apple
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/coconut.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Fresh Coconut
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div
+            class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+            <a href="#">
+              <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/broccoli.webp" alt="" />
+            </a>
+
+            <div class="p-6 pt-4">
+              <h3
+                class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+                Organic Broccoli Sliced  
+              </h3>
+              <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+              </p>
+              <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+                $36.99
+              </p>
+              <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+                <button
+                  class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                  Add to cart
+                </button>
+
+                <div
+                  class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                  role="group" aria-label="Basic outlined example">
+                  <button type="button" class="add-cart remove-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                  <button type="button" class="add-cart add-btn text-2xl">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
+          <div
+          class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+          <a href="#">
+            <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/carrot.webp" alt="" />
+          </a>
 
+          <div class="p-6 pt-4">
+            <h3
+              class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+              Vegan Red Carrot
+            </h3>
+            <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+              Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+            </p>
+            <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+              $36.99
+            </p>
+            <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+              <button
+                class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+                Add to cart
+              </button>
+
+              <div
+                class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+                role="group" aria-label="Basic outlined example">
+                <button type="button" class="add-cart remove-btn text-2xl">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+                <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+                <button type="button" class="add-cart add-btn text-2xl">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+        class="border border-[#EBEBEE] overflow-hidden rounded-lg md:rounded-2xl shadow-[0_0px_42px_rgba(119,119,119,0.05)]">
+        <a href="#">
+          <img class="mb-4 xl:mb-[17px] w-full" src="../assets/images/shop/bean.webp" alt="" />
+        </a>
+
+        <div class="p-6 pt-4">
+          <h3
+            class="text-center border-b border-[#CCCCCC] pb-3 xl:pb-4 font-Montserrat font-medium text-sm md:text-[22px] text-text_color">
+            Vegan Green Bean
+          </h3>
+          <p class="text-center font-Montserrat text-xs md:text-sm text-p_text mt-4 mb-3 xl:mb-6">
+            Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+          </p>
+          <p class="font-Montserrat font-semibold text-xl md:text-[32px] text-text_color text-center mb-4">
+            $36.99
+          </p>
+          <div class="mx-auto rounded-xl w-[256px] xl:w-[308px] h-10 xl:h-12 overflow-hidden">
+            <button
+              class="cart-add-btn bg-[#EBEBEE] w-full h-full font-Montserrat font-medium text-sm md:text-base text-text_color mb-6">
+              Add to cart
+            </button>
+
+            <div
+              class="btn-group counter-btn flex justify-between items-center px-8 w-full h-full bg-primary_3 text-white"
+              role="group" aria-label="Basic outlined example">
+              <button type="button" class="add-cart remove-btn text-2xl">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.2358 12H5.23584" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </button>
+              <input disabled="" class="text-center w-20 bg-transparent text-2xl" value="1" />
+              <button type="button" class="add-cart add-btn text-2xl">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.2646 4.5V19.5M19.7646 12H4.76465" stroke="white" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        </div>
+
+          <div class="flex justify-between items-center mt-5">
+            <button class="flex items-center gap-2 border border-[#F5F5F7] py-[6px] md:py-2.5 px-2 md:px-4 shadow-[0_1px_2px_rgba(16,24,40,0.05)] rounded-lg">
+              <span><i class="ph ph-arrow-left text-base md:text-xl text-[#838D8F]"></i></span>
+              <span class="font-Montserrat font-medium text-[10px] md:text-sm text-[#838D8F]">Previous</span>
+            </button>
+            <div>
+              <a class="bg-[#EDEDE3] text-primary_3 py-1 md:py-2 px-2 md:px-3 rounded-lg" href="#">1</a>
+              <a class="font-Montserrat font-medium text-xs md:text-sm py-1 md:py-2 px-2 md:px-3 text-p_text" href="#">2</a>
+              <a class="font-Montserrat font-medium text-xs md:text-sm py-1 md:py-2 px-2 md:px-3 text-p_text" href="#">...</a>
+              <a class="font-Montserrat font-medium text-xs md:text-sm py-1 md:py-2 px-2 md:px-3 text-p_text" href="#">6</a>
+             
+            </div>
+            <button class="flex items-center gap-2 border border-[#F5F5F7] py-[6px] md:py-2.5 px-2 md:px-4 shadow-[0_1px_2px_rgba(16,24,40,0.05)] rounded-lg">
+              <span class="font-Montserrat font-medium text-[10px] md:text-sm text-text_color">Next</span>
+            
+              <span><i class="ph ph-arrow-right text-base md:text-xl text-text_color"></i></i></span>
+            </button>
+          </div>
+        
+
+
+
+      </div>
+      
+    </div>
+    
+  </section>
+  <!-- shop page End  -->
+
+ 
+
+      
+   
 
     <!-- Footer Started -->
     <footer id="footer">
