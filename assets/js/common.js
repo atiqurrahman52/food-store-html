@@ -91,3 +91,58 @@ $(".acc-head").on("click", function () {
 });
 
 // courses details FAQ end
+
+
+// Quantity started 
+var incrementPlus;
+var incrementMinus;
+
+var buttonPlus  = $(".cart-qty-plus");
+var buttonMinus = $(".cart-qty-minus");
+
+var incrementPlus = buttonPlus.click(function() {
+	var $n = $(this)
+		.parent(".button-container")
+		.parent(".container-quantity")
+		.find(".qty");
+	$n.val(Number($n.val())+1 );
+});
+
+var incrementMinus = buttonMinus.click(function() {
+		var $n = $(this)
+		.parent(".button-container")
+		.parent(".container-quantity")
+		.find(".qty");
+	var amount = Number($n.val());
+	if (amount > 0) {
+		$n.val(amount-1);
+	}
+});
+// Quantity end 
+
+
+$(document).ready(function() {
+
+  // ------------ Counter BEGIN ------------ 
+  $(".counter__increment, .counter__decrement").click(function(e)
+  {
+    var $this = $(this);
+    var $counter__input = $(this).parent().find(".counter__input");
+    var $currentVal = parseInt($(this).parent().find(".counter__input").val());
+
+    //Increment
+    if ($currentVal != NaN && $this.hasClass('counter__increment'))
+    {
+      $counter__input.val($currentVal + 1);
+    }
+    //Decrement
+    else if ($currentVal != NaN && $this.hasClass('counter__decrement'))
+    {
+      if ($currentVal >= 1) {
+        $counter__input.val($currentVal - 1);
+      }
+    }
+  });
+  // ------------ Counter END ------------ 
+
+});
