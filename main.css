@@ -31,7 +31,18 @@
   fill: white;
 }
 
+/* swiper-pagination-bullet started  */
 
+.swiper-pagination-bullets .swiper-pagination-bullet{
+ margin-bottom: -40px !important;
+ width: 50px;
+ width: 28px;
+ height: 4px;
+ border-radius: 2px;
+ background: #47A358;
+}
+
+/* swiper-pagination-bullet end  */
 
 /* Accordion started  */
 .acc {

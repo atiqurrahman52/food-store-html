@@ -1,16 +1,19 @@
-// Navbar S tarted 
+// Navbar S tarted
 
-$('#menu-button').on('click', () => {
-  $('.list, .close').toggleClass('hidden');
-  $('.menu-list').toggleClass('hidden')
-})
+$("#menu-button").on("click", () => {
+  $(".list, .close").toggleClass("hidden");
+  $(".menu-list").toggleClass("hidden");
+});
 
 // Navbar End
 
-
 $(".cart-add-btn").click(function () {
   $(this).css({ display: "none" });
-  $(this).parent().parent().find(".counter-btn").css({ display: "flex", "justify-content": "space-between" });
+  $(this)
+    .parent()
+    .parent()
+    .find(".counter-btn")
+    .css({ display: "flex", "justify-content": "space-between" });
   $(this).parent().parent().find("input").val(1);
 });
 
@@ -34,19 +37,18 @@ $(".remove-btn").click(function () {
   }
 });
 
-
-// Swiper Js Started 
+// Swiper Js Started
 // Highest Selling Courses started
-var swiper8 = new Swiper(".highestSelling", {
+var swiper1 = new Swiper(".teamMember", {
   spaceBetween: 20,
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
   pagination: {
-    el: ".highestSellingPage",
+    el: ".teamMemberPage",
     clickable: true,
   },
   autoplay: {
-    delay: 5000, // time between slide changes in milliseconds
+    delay: 500, // time between slide changes in milliseconds
     disableOnInteraction: true, // enables or disables autoplay on user interaction (default: true)
   },
   breakpoints: {
@@ -70,26 +72,22 @@ var swiper8 = new Swiper(".highestSelling", {
 });
 // Highest Selling Courses started
 
-// Swiper Js End 
+// Swiper Js End
 
+// courses details FAQ started
 
+$(".acc-container .acc:nth-child(1) .acc-head").addClass("active");
+$(".acc-container .acc:nth-child(1) .acc-content").slideDown();
+$(".acc-head").on("click", function () {
+  if ($(this).hasClass("active")) {
+    $(this).siblings(".acc-content").slideUp();
+    $(this).removeClass("active");
+  } else {
+    $(".acc-content").slideUp();
+    $(".acc-head").removeClass("active");
+    $(this).siblings(".acc-content").slideToggle();
+    $(this).toggleClass("active");
+  }
+});
 
-
-
-  // courses details FAQ started
-
-  $(".acc-container .acc:nth-child(1) .acc-head").addClass("active");
-  $(".acc-container .acc:nth-child(1) .acc-content").slideDown();
-  $(".acc-head").on("click", function () {
-    if ($(this).hasClass("active")) {
-      $(this).siblings(".acc-content").slideUp();
-      $(this).removeClass("active");
-    } else {
-      $(".acc-content").slideUp();
-      $(".acc-head").removeClass("active");
-      $(this).siblings(".acc-content").slideToggle();
-      $(this).toggleClass("active");
-    }
-  });
-
-  // courses details FAQ end
+// courses details FAQ end
