@@ -32,75 +32,43 @@
 }
 
 
-/* accordion */
-.accordion-container .accordion {
-  margin-bottom: 20px;
-  cursor: pointer;
-  border-radius: 45%;
-}
-.accordion-container .accordion.active .accordion-heading {
-  background: rgba(208, 3, 56, 0.9);
-  border-radius: 10px 10px 0px 0px;
-}
-.accordion-container .accordion.active .accordion-heading h3 {
-  color: #fff;
-}
-.accordion-container .accordion.active .accordion-heading i {
-  color: #fff;
-  transform: rotate(180deg);
-  transition: transform 0.2s 0.1s;
-}
-.accordion-container .accordion.active .accordion-content {
-  display: block;
+
+/* Accordion started  */
+.acc {
+  margin-bottom: 10px;
 }
 
-.accordion-container .accordion .accordion-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  background: #fff;
-  padding: 10px 20px;
-  border-radius: 15px;
-  background: #ffffff;
-  box-shadow: 0px 0px 20px rgba(213, 29, 76, 0.05);
-  border-radius: 10px;
-}
-
-.accordion-container .accordion .accordion-heading h3 {
-  font-size: 20px;
-  color: rgba(208, 3, 56, 0.9);
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.accordion-container .accordion .accordion-heading i {
-  font-size: 25px;
-  color: rgba(208, 3, 56, 0.9);
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.accordion-container .accordion .accordion-content {
+.acc-head {
   padding: 15px 10px;
-  border-top: 0;
+  font-size: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.acc-head::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #071C1F;
+  line-height: 18px;
+  height: 24px;
+}
+
+.acc-head::after {
+  content: "+";
+}
+.acc-head.active:after {
+  content: "-";
+  font-size: 46px;
+  line-height: 10px;
+  color:#47A358;
+}
+
+.acc-content {
+  padding: 10px 10px;
   display: none;
-  animation: animate 0.2s linear backwards;
-  transform-origin: top;
-  background: #ffffff;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 0px 10px 10px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #5c5c5c;
 }
-@keyframes animate {
-  0% {
-    transform: scaleY(0);
-  }
-}
- /* accordio end  */
+
+/* Accordion end  */
