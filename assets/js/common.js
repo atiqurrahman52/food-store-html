@@ -93,32 +93,7 @@ $(".acc-head").on("click", function () {
 // courses details FAQ end
 
 
-// Quantity started 
-var incrementPlus;
-var incrementMinus;
-
-var buttonPlus  = $(".cart-qty-plus");
-var buttonMinus = $(".cart-qty-minus");
-
-var incrementPlus = buttonPlus.click(function() {
-	var $n = $(this)
-		.parent(".button-container")
-		.parent(".container-quantity")
-		.find(".qty");
-	$n.val(Number($n.val())+1 );
-});
-
-var incrementMinus = buttonMinus.click(function() {
-		var $n = $(this)
-		.parent(".button-container")
-		.parent(".container-quantity")
-		.find(".qty");
-	var amount = Number($n.val());
-	if (amount > 0) {
-		$n.val(amount-1);
-	}
-});
-// Quantity end 
+ 
 
 
 $(document).ready(function() {
@@ -146,3 +121,56 @@ $(document).ready(function() {
   // ------------ Counter END ------------ 
 
 });
+
+
+
+// Thumbnail started
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+// Thumbnail end
+
+
+// Review tab Started 
+$(document).ready(function() {
+    
+  //alert('here');
+
+$('.tabs a').click(function(){
+
+   $('.panel').hide();
+   $('.tabs a.active').removeClass('active');
+   $(this).addClass('active');
+   
+   var panel = $(this).attr('href');
+   $(panel).fadeIn(1000);
+   
+   return false;  // prevents link action
+  
+});  // end click 
+
+   $('.tabs li:first a').click();
+   
+}); // end ready
+
+
+// Review tab End 
+

@@ -19,7 +19,7 @@
 .subscribe-mobile {
   background-image: url("../assets/images/subscribe/subscribe-mobile.webp");
 }
-.sub-header{
+.sub-header {
   background-image: url("../assets/images/share/sub-header-section.webp");
 }
 .sub-header-mobile {
@@ -33,13 +33,26 @@
 
 /* swiper-pagination-bullet started  */
 
-.swiper-pagination-bullets .swiper-pagination-bullet{
- margin-bottom: -40px !important;
- width: 50px;
- width: 28px;
- height: 4px;
- border-radius: 2px;
- background: #47A358;
+/* .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-bottom: -40px !important;
+  width: 50px;
+  width: 28px;
+  height: 4px;
+  border-radius: 2px;
+  background: #47a358;
+} */
+
+.swiper-pagination-lock {
+  display: none !important;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  margin-top: 4px;
 }
 
 /* swiper-pagination-bullet end  */
@@ -62,7 +75,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
-  color: #071C1F;
+  color: #071c1f;
   line-height: 18px;
   height: 24px;
 }
@@ -74,7 +87,7 @@
   content: "-";
   font-size: 46px;
   line-height: 10px;
-  color:#47A358;
+  color: #47a358;
 }
 
 .acc-content {
@@ -83,3 +96,40 @@
 }
 
 /* Accordion end  */
+
+/* Thumnail slider started  */
+
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* Thumnail slider End  */
+
+/* set li properties  */
+
+
+
+
+
+
+/* Review Tab Start */
+
+.tabs li {
+ 
+}
+
+
+
+.tabs a.active {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+  color: #071C1F;
+}
+
+
+/* Review Tab End */
