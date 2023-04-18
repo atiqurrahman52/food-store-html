@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Checkout</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="../dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <header id="navabr" class="py-5 relative z-20 shadow-[0_0px_22px_rgba(119,119,119,0.19)]">
+    <div class="container">
+      <div class="flex justify-between items-center">
+        <a href="../index.html">
+          <img class="w-[110px] md:w-[166px] h-8 md:h-12" src="../assets/images/logo/logo-1.webp" alt="" />
+        </a>
+        <ul class="hidden md:flex gap-4 md:gap-8">
+          <li class="font-Montserrat text-base text-text_color">
+            <a href="../index.html"> Home</a>
+          </li>
+          <li class="font-Montserrat text-base text-text_color">
+            <a href="../pages/shop.html"> Shop</a>
+          </li>
+          <li class="font-Montserrat text-base text-text_color">
+            <a href="../pages/blog.html"> Blog</a>
+          </li>
+          <li class="font-Montserrat text-base text-text_color">
+            <a href="../pages/about.html"> About</a>
+          </li>
+          <li class="font-Montserrat text-base text-text_color">
+            <a href="../pages/contact.html"> Contact</a>
+          </li>
+        </ul>
+
+        <div class="flex gap-4 md:gap-5">
+          <button class="bg-[#F2F2F2] py-1 px-2 rounded-full">
+            <i class="ph ph-heart text-base md:text-xl text-p_text"></i>
+          </button>
+          <button class="bg-[#F2F2F2] py-1 px-2 rounded-full">
+            <i class="ph ph-shopping-cart text-base md:text-xl text-p_text"></i>
+          </button>
+          <button class="bg-[#F2F2F2] py-1 px-2 rounded-full hidden md:block">
+            <i class="ph ph-user-circle text-base md:text-xl text-p_text"></i>
+          </button>
+          <button id="menu-button" class="bg-[#F2F2F2] py-1 px-2 rounded-full md:hidden">
+            <i class="list ph ph-list text-base md:text-xl text-p_text"></i>
+            <i class="close ph ph-x text-base md:text-xl text-p_text hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- For Mobile  -->
+
+  <div class="menu-list bg-white hidden fixed inset-0 z-10 h-screen w-full">
+    <div class="flex items-center justify-center">
+      <ul class="gap-4 md:gap-8 space-y-3 mt-28  w-full px-6">
+        <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
+          <a href="../pages/shop.html">Shop</a>
+        </li>
+        <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
+          <a href="../pages/blog.html">Blog</a>
+        </li>
+        <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
+          <a href="../pages/about.html">About</a>
+        </li>
+        <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
+          <a href="../pages/contact.html">Contact</a>
+        </li>
+      </ul>
+     
+    </div>
+    <div class="p-6 mt-16">
+      <h3 class="font-Montserrat font-semibold md:font-bold text-sm text-text_color mb-5">Contact</h3>
+
+    <div class="space-y-5">
+      <a href="#" class="flex gap-2">
+        <span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 7C10 7.53043 9.78929 8.03914 9.41421 8.41421C9.03914 8.78929 8.53043 9 8 9C7.46957 9 6.96086 8.78929 6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579C9.78929 5.96086 10 6.46957 10 7Z" stroke="#071C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 7C13 11.7613 8 14.5 8 14.5C8 14.5 3 11.7613 3 7C3 5.67392 3.52678 4.40215 4.46447 3.46447C5.40215 2.52678 6.67392 2 8 2C9.32608 2 10.5979 2.52678 11.5355 3.46447C12.4732 4.40215 13 5.67392 13 7Z" stroke="#071C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            
+        </span>
+        <p class="font-Montserrat text-xs text-p_text">Brooklyn, New York, <br>
+          United States</p>
+       </a>
+       <a href="tel:+0123-456789" class="flex gap-2">
+        <span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_635_18641)">
+            <path d="M1.5 4.5C1.5 10.0227 5.97733 14.5 11.5 14.5H13C13.3978 14.5 13.7794 14.342 14.0607 14.0607C14.342 13.7794 14.5 13.3978 14.5 13V12.0853C14.5 11.7413 14.266 11.4413 13.932 11.358L10.9833 10.6207C10.69 10.5473 10.382 10.6573 10.2013 10.8987L9.55467 11.7607C9.36667 12.0113 9.042 12.122 8.748 12.014C7.65659 11.6128 6.66544 10.9791 5.84319 10.1568C5.02094 9.33456 4.38725 8.34341 3.986 7.252C3.878 6.958 3.98867 6.63333 4.23933 6.44533L5.10133 5.79867C5.34333 5.618 5.45267 5.30933 5.37933 5.01667L4.642 2.068C4.60143 1.9058 4.50781 1.7618 4.37604 1.65889C4.24426 1.55598 4.08187 1.50006 3.91467 1.5H3C2.60218 1.5 2.22064 1.65804 1.93934 1.93934C1.65804 2.22064 1.5 2.60218 1.5 3V4.5Z" stroke="#071C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_635_18641">
+            <rect width="16" height="16" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+          </span>
+       <p class="font-Montserrat text-xs  text-p_text">+0123-456789</p>
+      </a>
+
+       <a href="mailto:example@example.com" class="flex gap-2">
+        <span>
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 4.99985V5.60385C14.5 5.87468 14.4267 6.14045 14.2878 6.37297C14.149 6.6055 13.9498 6.79609 13.7113 6.92452L9.39267 9.24985M1.5 4.99985V5.60385C1.49999 5.87468 1.5733 6.14045 1.71216 6.37297C1.85101 6.6055 2.05023 6.79609 2.28867 6.92452L6.60733 9.24985M6.60733 9.24985L7.28867 8.88318C7.50727 8.76543 7.7517 8.70379 8 8.70379C8.2483 8.70379 8.49273 8.76543 8.71133 8.88318L9.39333 9.24985L12.5 10.9232M6.60733 9.24985L3.5 10.9232M14.5 11.9998C14.5 12.3977 14.342 12.7792 14.0607 13.0605C13.7794 13.3418 13.3978 13.4998 13 13.4998H3C2.60218 13.4998 2.22064 13.3418 1.93934 13.0605C1.65804 12.7792 1.5 12.3977 1.5 11.9998V4.89585C1.50011 4.62514 1.57348 4.3595 1.71233 4.12711C1.85118 3.89471 2.05033 3.70423 2.28867 3.57585L7.28867 0.882517C7.50727 0.764766 7.7517 0.703125 8 0.703125C8.2483 0.703125 8.49273 0.764766 8.71133 0.882517L13.7113 3.57585C13.9497 3.70423 14.1488 3.89471 14.2877 4.12711C14.4265 4.3595 14.4999 4.62514 14.5 4.89585V11.9998Z" stroke="#071C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+          </span>
+       <p class="font-Montserrat text-xs text-p_text">example@example.com</p>
+      </a>
+    </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+  
+  <!-- Sub Header Started -->
+  <section id="sub_header">
+    <div class="sub-header h-[300px] bg-cover bg-center bg-no-repeat hidden md:block">
+      <h3 class="flex justify-center h-full items-center font-Playfair font-black text-xl md:text-5xl text-text_color">Check Out</h3>
+      
+    </div>
+
+    <!-- for mobile  -->
+    <div class="sub-header-mobile h-[180px] bg-cover bg-center bg-no-repeat md:hidden">
+      <h3 class="flex justify-center h-full items-center font-Playfair font-black text-xl md:text-5xl text-text_color">Check Out</h3>
+      
+    </div>
+    
+  </section>
+  <!-- Sub Header End -->
+
+   <!-- Checkout Started  -->
+   <section id="checkout">
+    <div class="container">
+        <div class="py-16 md:py-20">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-8">
+                    <h2 class="font-Montserrat font-medium text-sm md:text-xl text-text_color border-b pb-6">Billing Details</h2>
+                    <div class="space-y-4 pt-4">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Name*</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                        </div>
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Last Name*</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Address*</label>
+                        <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                    </div>
+                    <div>
+                        <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Town/City*</label>
+                        <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">State/County*</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                        </div>
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Postcode/Zip*</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="number" name="" value="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Email *</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="" name="" value="">
+                        </div>
+                        <div class="w-full">
+                            <label class="font-Montserrat text-sm md:text-base text-p_text block mb-2">Phone*</label>
+                            <input class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 w-full h-12" type="number" name="" value="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="font-Montserrat font-semibold text-sm md:text-base text-primary_3 block mb-3">Special Instructions</label>
+                        
+                        <textarea  class="bg-[#F5F5F5] rounded md:rounded-xl focus:outline-none px-3 py-2 w-full h-[75px]" rows="" cols=""></textarea>
+                    </div>
+                </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="bg-[#F5F5F5] rounded-lg md:rounded-2xl py-6 px-5 mb-6">
+                        <h3 class="font-Montserrat font-medium text-base md:text-xl text-text_color mb-4">Card Totals</h3>
+                        <div class="flex justify-between mb-4">
+                            <h3 class="font-Montserrat font-medium text-sm md:text-base text-text_color">Product</h3>
+                            <span class="font-Montserrat font-medium text-sm md:text-base text-text_color">Total</span>
+                        </div>
+                        <div class="bg-white py-[7px] px-3 rounded-lg">
+                            <div class="flex justify-between mb-[6px]">
+                             
+                                <h3 class="font-Montserrat font-medium text-xs md:text-sm text-text_color">Red Capsicum </h3>
+                                 
+                            <div class="space-x-2 md:space-x-8">
+                                <span class="font-Montserrat font-medium text-xs md:text-base text-primary_3">(x2)</span>
+                                <span class="font-Montserrat font-medium text-xs md:text-sm text-text_color">225.00$</span>
+                            </div>
+                        </div>
+                        <h4 class="font-Montserrat font-medium text-sm text-p_text mb-[7px]">Fruits</h4>
+
+                        <div class="flex justify-between mb-[6px]">
+                             
+                            <h3 class="font-Montserrat font-medium text-xs md:text-sm text-text_color">Red Capsicum </h3>
+                             
+                        <div class="space-x-2 md:space-x-8">
+                            <span class="font-Montserrat font-medium text-xs md:text-base text-primary_3">(x2)</span>
+                            <span class="font-Montserrat font-medium text-xs md:text-sm text-text_color">225.00$</span>
+                        </div>
+                    </div>
+                    <h4 class="font-Montserrat font-medium text-sm text-p_text mb-[7px]">Fruits</h4>
+
+                    <div class="flex justify-between mb-[6px]">
+                             
+                        <h3 class="font-Montserrat font-medium text-xs md:text-sm text-text_color">Red Capsicum </h3>
+                         
+                    <div class="space-x-2 md:space-x-8">
+                        <span class="font-Montserrat font-medium text-xs md:text-base text-primary_3">(x2)</span>
+                        <span class="font-Montserrat font-medium text-xs md:text-sm text-text_color">225.00$</span>
+                    </div>
+                </div>
+                <h4 class="font-Montserrat font-medium text-sm text-p_text mb-[7px]">Fruits</h4>
+                        </div>
+
+                        <div class="flex justify-between pt-4">
+                          <h5 class="font-Montserrat text-sm md:text-base text-text_color">Sub Totals</h5>
+                          <span class="font-Montserrat font-medium text-sm md:text-base text-text_color">$1256.00</span>
+                        </div>
+                        <div class="flex justify-between pt-3 border-b-2 pb-3">
+                          <h5 class="font-Montserrat text-sm md:text-base text-text_color">Shipping Cost</h5>
+                          <span class="font-Montserrat font-medium text-sm md:text-base text-text_color">$70.00</span>
+                        </div>
+
+                        <div class="flex justify-between pt-4">
+                            <h3 class="font-Montserrat font-semibold text-base md:text-xl text-text_color">Total</h3>
+                            <span class="font-Montserrat font-medium text-sm md:text-base text-primary_3">$1430.00</span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="bg-[#F5F5F5] rounded-lg md:rounded-2xl py-6 px-5">
+                        <h3 class="font-Montserrat font-medium text-base md:text-xl text-text_color mb-4">Select Payment</h3>
+                        <div class="space-y-6">
+                            
+                      
+                        <div class="flex justify-between">
+                            <div class="space-x-3">
+                                <input class="accent-primary_3" type="radio" id="payment" name="payment" value="payment">
+                                 <label for="payment" class="font-Montserrat font-medium text-sm md:text-base text-text_color">Check Payments</label><br>
+                            </div>
+                            <div>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#47A358"/>
+                                    <path d="M9.125 11V21C9.125 21.3315 9.2567 21.6495 9.49112 21.8839C9.72554 22.1183 10.0435 22.25 10.375 22.25H22.875C23.0408 22.25 23.1997 22.1842 23.3169 22.0669C23.4342 21.9497 23.5 21.7908 23.5 21.625V12.875C23.5 12.7092 23.4342 12.5503 23.3169 12.4331C23.1997 12.3158 23.0408 12.25 22.875 12.25H10.375C10.0435 12.25 9.72554 12.1183 9.49112 11.8839C9.2567 11.6495 9.125 11.3315 9.125 11ZM9.125 11C9.125 10.6685 9.2567 10.3505 9.49112 10.1161C9.72554 9.8817 10.0435 9.75 10.375 9.75H21" stroke="#47A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.0625 18.1875C20.5803 18.1875 21 17.7678 21 17.25C21 16.7322 20.5803 16.3125 20.0625 16.3125C19.5447 16.3125 19.125 16.7322 19.125 17.25C19.125 17.7678 19.5447 18.1875 20.0625 18.1875Z" fill="#47A358"/>
+                                    </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="space-x-3">
+                                <input class="accent-primary_3" type="radio" id="Cash" name="Cash" value="Cash">
+                                 <label for="Cash" class="font-Montserrat font-medium text-sm md:text-base text-text_color">Cash on Delivery</label><br>
+                            </div>
+                            <div>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" stroke="#47A358"/>
+                                    <path d="M16 23.5C20.1421 23.5 23.5 20.1421 23.5 16C23.5 11.8579 20.1421 8.5 16 8.5C11.8579 8.5 8.5 11.8579 8.5 16C8.5 20.1421 11.8579 23.5 16 23.5Z" stroke="#47A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.735 19.3128L18.4928 16.7035C18.4198 16.6565 18.3369 16.6271 18.2506 16.6175L16.4615 16.3753C16.328 16.3562 16.192 16.3818 16.0746 16.4483C15.9573 16.5147 15.8653 16.6182 15.8131 16.7425L14.7428 19.141C14.6925 19.2525 14.676 19.3764 14.6954 19.4972C14.7149 19.618 14.7694 19.7305 14.8521 19.8206L16.3209 21.4066C16.3873 21.4795 16.4359 21.5669 16.463 21.6617C16.4901 21.7566 16.495 21.8564 16.4771 21.9535L16.1725 23.5003" stroke="#47A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.0773 10.3438L10.3742 12C10.313 12.147 10.3102 12.3119 10.3664 12.4609L11.2648 14.8516C11.3 14.9512 11.3601 15.0402 11.4394 15.1099C11.5187 15.1797 11.6147 15.2279 11.718 15.25L13.3898 15.6094C13.4826 15.6281 13.5698 15.6683 13.6444 15.7266C13.719 15.7849 13.7789 15.8598 13.8195 15.9453L14.1164 16.5625C14.1692 16.6669 14.2495 16.7548 14.3486 16.8168C14.4478 16.8787 14.562 16.9124 14.6789 16.9141H15.7336" stroke="#47A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.9141 8.74219L18.6406 10.0547C18.7077 10.1781 18.7318 10.3203 18.7092 10.4589C18.6866 10.5975 18.6185 10.7247 18.5156 10.8203L16.4141 12.7188C16.3789 12.7523 16.3395 12.7812 16.2969 12.8047L15.3359 13.3359C15.2443 13.3845 15.1427 13.4113 15.0391 13.4141H13.3672C13.244 13.4147 13.1237 13.4512 13.021 13.5192C12.9183 13.5872 12.8377 13.6837 12.7891 13.7969L12.1406 15.3359" stroke="#47A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="space-x-3">
+                                <input class="accent-primary_3" type="radio" id="paypal" name="paypal" value="paypal">
+                                 <label for="paypal" class="font-Montserrat font-medium text-sm md:text-base text-text_color">Paypal</label><br>
+                            </div>
+                            <div>
+                                <svg width="86" height="32" viewBox="0 0 86 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.333333" y="0.333333" width="85.3333" height="31.3333" rx="3.66667" fill="white" stroke="#D9D9D9" stroke-width="0.666667"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2061 8.00195H15.5353C15.2157 8.00195 14.9438 8.23422 14.894 8.5496L13.0049 20.5251C12.9674 20.7614 13.1504 20.9744 13.3901 20.9744H15.62C15.9396 20.9744 16.2114 20.7422 16.2613 20.4262L16.7708 17.1962C16.8199 16.8799 17.0925 16.648 17.4114 16.648H18.89C21.9668 16.648 23.7424 15.1592 24.2064 12.2093C24.4153 10.9187 24.2152 9.90464 23.6106 9.19425C22.9469 8.41466 21.7693 8.00195 20.2061 8.00195ZM20.745 12.3758C20.4896 14.0516 19.209 14.0516 17.9708 14.0516H17.2659L17.7604 10.9219C17.7898 10.7329 17.9537 10.5935 18.1449 10.5935H18.468C19.3114 10.5935 20.1072 10.5935 20.5183 11.0742C20.7633 11.3611 20.8385 11.7871 20.745 12.3758ZM34.1682 12.3221H31.9314C31.7409 12.3221 31.5762 12.4615 31.5468 12.6508L31.4479 13.2761L31.2914 13.0496C30.8072 12.3468 29.7276 12.112 28.6498 12.112C26.178 12.112 24.067 13.9837 23.6558 16.6094C23.4422 17.9189 23.7459 19.1713 24.489 20.0447C25.1707 20.8477 26.146 21.1824 27.3063 21.1824C29.2977 21.1824 30.4024 19.9019 30.4024 19.9019L30.3025 20.5235C30.2649 20.7611 30.4479 20.9741 30.6862 20.9741H32.701C33.0215 20.9741 33.2917 20.7419 33.3423 20.4258L34.5512 12.7715C34.5895 12.5361 34.4071 12.3221 34.1682 12.3221ZM31.0503 16.6748C30.8344 17.9524 29.8202 18.8101 28.5269 18.8101C27.8774 18.8101 27.3581 18.6018 27.025 18.2071C26.6944 17.8153 26.5686 17.2572 26.6738 16.636C26.8755 15.3691 27.9068 14.4836 29.1805 14.4836C29.8154 14.4836 30.3319 14.6944 30.672 15.0926C31.0127 15.4948 31.1479 16.0561 31.0503 16.6748ZM43.8328 12.3218H46.0806C46.3954 12.3218 46.5791 12.6748 46.4002 12.933L38.9245 23.7221C38.8034 23.8969 38.604 24.0009 38.391 24.0009H36.146C35.83 24.0009 35.6454 23.645 35.8284 23.3862L38.1562 20.101L35.6805 12.8366C35.5948 12.5841 35.7813 12.3218 36.05 12.3218H38.2586C38.5455 12.3218 38.7987 12.5101 38.8815 12.7847L40.1954 17.1722L43.2956 12.6065C43.4169 12.4283 43.6186 12.3218 43.8328 12.3218Z" fill="#253B80"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M68.1992 20.5238L70.1161 8.32928C70.1455 8.13999 70.3095 8.00063 70.5001 8H72.6582C72.8965 8 73.0795 8.21362 73.0418 8.45L71.1515 20.4248C71.1022 20.7409 70.8304 20.9731 70.5102 20.9731H68.5829C68.3446 20.9731 68.1616 20.7601 68.1992 20.5238ZM53.5188 8.00063H48.8471C48.5282 8.00063 48.2564 8.2329 48.2065 8.54828L46.3174 20.5238C46.2798 20.7601 46.4628 20.9731 46.7014 20.9731H49.0984C49.3212 20.9731 49.5118 20.8107 49.5466 20.5895L50.0826 17.1949C50.1319 16.8786 50.4043 16.6466 50.7232 16.6466H52.2011C55.2786 16.6466 57.0538 15.1579 57.5181 12.208C57.7277 10.9174 57.5263 9.90332 56.922 9.19293C56.2586 8.41334 55.082 8.00063 53.5188 8.00063ZM54.0576 12.3745C53.8029 14.0503 52.5222 14.0503 51.2833 14.0503H50.5791L51.0744 10.9206C51.1038 10.7316 51.2662 10.5922 51.4581 10.5922H51.7811C52.624 10.5922 53.4205 10.5922 53.8313 11.0729C54.0766 11.3598 54.1512 11.7858 54.0576 12.3745ZM67.4796 12.3208H65.2444C65.0523 12.3208 64.8892 12.4602 64.8604 12.6494L64.7615 13.2748L64.6044 13.0482C64.1202 12.3454 63.0412 12.1106 61.9635 12.1106C59.4916 12.1106 57.3813 13.9824 56.9701 16.6081C56.7571 17.9176 57.0595 19.17 57.8026 20.0434C58.4856 20.8464 59.4597 21.1811 60.6199 21.1811C62.6114 21.1811 63.7157 19.9006 63.7157 19.9006L63.6161 20.5222C63.5785 20.7598 63.7615 20.9728 64.0014 20.9728H66.0153C66.3342 20.9728 66.606 20.7405 66.6559 20.4245L67.8655 12.7702C67.9025 12.5347 67.7195 12.3208 67.4796 12.3208ZM64.362 16.6735C64.1474 17.9511 63.1319 18.8088 61.8383 18.8088C61.1901 18.8088 60.6698 18.6005 60.3364 18.2058C60.0058 17.814 59.8816 17.2559 59.9856 16.6346C60.1882 15.3678 61.2182 14.4823 62.4919 14.4823C63.1272 14.4823 63.6433 14.6931 63.9837 15.0912C64.3257 15.4935 64.4609 16.0548 64.362 16.6735Z" fill="#179BD7"/>
+                                    </svg>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <button class="pt-4" >
+                        <span class="font-Montserrat font-medium text-sm md:text-xl text-primary_3">+Add New</span>
+                    </button>
+
+                    </div>
+
+                    <div class="space-x-3 py-6 px-5">
+                        <input type="checkbox" id="terms" name="terms" value="terms">
+                        <label for="terms" class="font-Montserrat text-xs text-p_text"> I have read and agree to the website <span class="text-primary_3">terms
+                            and conditions *</span></label><br>
+                    </div>
+                    <div class="py-6 px-5">
+                        <button class="w-full h-10 md:h-14 bg-primary_3 text-white rounded-lg font-Montserrat font-medium text-sm md:text-base">Place an Order</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+   </section>
+  
+   <!-- Checkout Cart End  -->
+
+
+
+
+
+    <!-- Footer Started -->
+    <footer id="footer">
+      <div class="bg-[#0F140D]  mt-10">
+          <div class="container">
+            <div class="grid grid-cols-12 py-16 gap-6">
+
+              <div class="col-span-12  md:col-span-4">
+                  <a  href="../index.html">
+                    <img class="mb-6 md:mb-[18px]" src="../assets/images/logo/logo-2.webp" alt="">
+                  </a>
+                  <p class="font-Montserrat text-xs md:text-base text-[#E6F6FF] mb-6 md:mb-10">Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                  <div class="flex gap-5">
+                    <a href="#">
+                      <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1482 11.165L12.8219 7.57282H8.60732V5.24272C8.60732 4.25973 9.19497 3.30097 11.0827 3.30097H13V0.242718C13 0.242718 11.2607 0 9.59862 0C6.12608 0 3.85847 1.72085 3.85847 4.83495V7.57282H0V11.165H3.85847V19.8495C4.6331 19.949 5.42559 20 6.23289 20C7.0402 20 7.83268 19.949 8.60732 19.8495V11.165H12.1482Z" fill="white"/>
+                        </svg>
+                        
+                    </a>
+                    <a href="#">
+                      <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.90544 20C4.36365 20 1.99428 19.1818 0 17.7701C1.69321 17.8914 4.68134 17.601 6.53995 15.6389C3.74399 15.497 2.48306 13.1237 2.31859 12.1095C2.55616 12.211 3.68917 12.3327 4.32877 12.0487C1.11249 11.1562 0.619086 8.03245 0.728732 7.07911C1.33178 7.54564 2.35514 7.70791 2.75718 7.66734C-0.239806 5.29412 0.838378 1.72414 1.36833 0.953347C3.51908 4.25101 6.74237 6.1031 10.73 6.20612C10.6548 5.84118 10.6151 5.46124 10.6151 5.07099C10.6151 2.27036 12.6605 0 15.1837 0C16.502 0 17.6899 0.619786 18.5238 1.61116C19.4047 1.3827 20.7305 0.847885 21.3787 0.385396C21.052 1.68357 20.0349 2.76651 19.4196 3.16789C19.4146 3.15418 19.4247 3.18155 19.4196 3.16789C19.9601 3.07742 21.4223 2.76641 22 2.33266C21.7143 3.06196 20.636 4.27455 19.7511 4.95341C19.9157 12.9896 14.3601 20 6.90544 20Z" fill="white"/>
+                        </svg>
+                        
+                        
+                    </a>
+                    <a href="#">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_828_2239)">
+                        <path d="M10 1.80078C12.6719 1.80078 12.9883 1.8125 14.0391 1.85937C15.0156 1.90234 15.543 2.06641 15.8945 2.20313C16.3594 2.38281 16.6953 2.60156 17.043 2.94922C17.3945 3.30078 17.6094 3.63281 17.7891 4.09766C17.9258 4.44922 18.0898 4.98047 18.1328 5.95312C18.1797 7.00781 18.1914 7.32422 18.1914 9.99219C18.1914 12.6641 18.1797 12.9805 18.1328 14.0313C18.0898 15.0078 17.9258 15.5352 17.7891 15.8867C17.6094 16.3516 17.3906 16.6875 17.043 17.0352C16.6914 17.3867 16.3594 17.6016 15.8945 17.7813C15.543 17.918 15.0117 18.082 14.0391 18.125C12.9844 18.1719 12.668 18.1836 10 18.1836C7.32813 18.1836 7.01172 18.1719 5.96094 18.125C4.98438 18.082 4.45703 17.918 4.10547 17.7813C3.64063 17.6016 3.30469 17.3828 2.95703 17.0352C2.60547 16.6836 2.39063 16.3516 2.21094 15.8867C2.07422 15.5352 1.91016 15.0039 1.86719 14.0313C1.82031 12.9766 1.80859 12.6602 1.80859 9.99219C1.80859 7.32031 1.82031 7.00391 1.86719 5.95312C1.91016 4.97656 2.07422 4.44922 2.21094 4.09766C2.39063 3.63281 2.60938 3.29688 2.95703 2.94922C3.30859 2.59766 3.64063 2.38281 4.10547 2.20313C4.45703 2.06641 4.98828 1.90234 5.96094 1.85937C7.01172 1.8125 7.32813 1.80078 10 1.80078ZM10 0C7.28516 0 6.94531 0.0117187 5.87891 0.0585938C4.81641 0.105469 4.08594 0.277344 3.45313 0.523438C2.79297 0.78125 2.23438 1.12109 1.67969 1.67969C1.12109 2.23438 0.78125 2.79297 0.523438 3.44922C0.277344 4.08594 0.105469 4.8125 0.0585938 5.875C0.0117188 6.94531 0 7.28516 0 10C0 12.7148 0.0117188 13.0547 0.0585938 14.1211C0.105469 15.1836 0.277344 15.9141 0.523438 16.5469C0.78125 17.207 1.12109 17.7656 1.67969 18.3203C2.23438 18.875 2.79297 19.2188 3.44922 19.4727C4.08594 19.7188 4.8125 19.8906 5.875 19.9375C6.94141 19.9844 7.28125 19.9961 9.99609 19.9961C12.7109 19.9961 13.0508 19.9844 14.1172 19.9375C15.1797 19.8906 15.9102 19.7188 16.543 19.4727C17.1992 19.2188 17.7578 18.875 18.3125 18.3203C18.8672 17.7656 19.2109 17.207 19.4648 16.5508C19.7109 15.9141 19.8828 15.1875 19.9297 14.125C19.9766 13.0586 19.9883 12.7188 19.9883 10.0039C19.9883 7.28906 19.9766 6.94922 19.9297 5.88281C19.8828 4.82031 19.7109 4.08984 19.4648 3.45703C19.2188 2.79297 18.8789 2.23438 18.3203 1.67969C17.7656 1.125 17.207 0.78125 16.5508 0.527344C15.9141 0.28125 15.1875 0.109375 14.125 0.0625C13.0547 0.0117188 12.7148 0 10 0Z" fill="white"/>
+                        <path d="M10 4.86328C7.16406 4.86328 4.86328 7.16406 4.86328 10C4.86328 12.8359 7.16406 15.1367 10 15.1367C12.8359 15.1367 15.1367 12.8359 15.1367 10C15.1367 7.16406 12.8359 4.86328 10 4.86328ZM10 13.332C8.16016 13.332 6.66797 11.8398 6.66797 10C6.66797 8.16016 8.16016 6.66797 10 6.66797C11.8398 6.66797 13.332 8.16016 13.332 10C13.332 11.8398 11.8398 13.332 10 13.332Z" fill="white"/>
+                        <path d="M16.5391 4.66016C16.5391 5.32422 16 5.85938 15.3398 5.85938C14.6758 5.85938 14.1406 5.32031 14.1406 4.66016C14.1406 3.99609 14.6797 3.46094 15.3398 3.46094C16 3.46094 16.5391 4 16.5391 4.66016Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_828_2239">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                        
+                    </a>
+                    <a href="#">
+                      <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.30722 2.41736C5.30722 3.75242 4.11916 4.83471 2.65361 4.83471C1.18806 4.83471 0 3.75242 0 2.41736C0 1.08229 1.18806 0 2.65361 0C4.11916 0 5.30722 1.08229 5.30722 2.41736Z" fill="white"/>
+                        <path d="M0.362887 6.61157H4.89897V20H0.362887V6.61157Z" fill="white"/>
+                        <path d="M12.2021 6.61157H7.66598V20H12.2021C12.2021 20 12.2021 15.7851 12.2021 13.1498C12.2021 11.568 12.7566 9.97934 14.9691 9.97934C17.4695 9.97934 17.4544 12.0493 17.4428 13.653C17.4275 15.7492 17.4639 17.8884 17.4639 20H22V12.9339C21.9616 8.42197 20.7545 6.34298 16.7835 6.34298C14.4253 6.34298 12.9634 7.3858 12.2021 8.32927V6.61157Z" fill="white"/>
+                        </svg>
+                        
+                    </a>
+                    
+                  </div>
+              </div>
+
+
+              <div class="col-span-12 md:col-span-2">
+                <h3 class="font-Montserrat font-semibold md:font-bold text-base md:text-xl text-white mb-8">Info</h3>
+                <ul class="space-y-5">
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="../index.html">Home</a></li>
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="../pages/about.html">About</a></li>
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="../pages/shop.html">Shop</a></li>
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="../pages/contact.html">Contact</a></li>
+                  
+                </ul>
+              </div>
+
+              <div class="col-span-12 md:col-span-2">
+                <h3 class="font-Montserrat font-semibold md:font-bold text-base md:text-xl text-white mb-8">Support</h3>
+                <ul class="space-y-5">
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="../pages/privacy.html">Privacy</a></li>
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="#">Security</a></li>
+                  <li class="font-Montserrat font-medium text-xs md:text-base text-white"><a href="#">Certifications</a></li>
+                
+                  
+                </ul>
+              </div>
+
+              <div class="col-span-12 md:col-span-4">
+                <h3 class="font-Montserrat font-semibold md:font-bold text-base md:text-xl text-white mb-8">Contact</h3>
+
+              <div class="space-y-5">
+                <a href="#" class="flex gap-2">
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5 8.75C12.5 9.41304 12.2366 10.0489 11.7678 10.5178C11.2989 10.9866 10.663 11.25 10 11.25C9.33696 11.25 8.70107 10.9866 8.23223 10.5178C7.76339 10.0489 7.5 9.41304 7.5 8.75C7.5 8.08696 7.76339 7.45107 8.23223 6.98223C8.70107 6.51339 9.33696 6.25 10 6.25C10.663 6.25 11.2989 6.51339 11.7678 6.98223C12.2366 7.45107 12.5 8.08696 12.5 8.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16.25 8.75C16.25 14.7017 10 18.125 10 18.125C10 18.125 3.75 14.7017 3.75 8.75C3.75 7.0924 4.40848 5.50268 5.58058 4.33058C6.75268 3.15848 8.3424 2.5 10 2.5C11.6576 2.5 13.2473 3.15848 14.4194 4.33058C15.5915 5.50268 16.25 7.0924 16.25 8.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      
+                  </span>
+                  <p class="font-Montserrat text-xs md:text-base text-white">Brooklyn, New York, <br>
+                    United States</p>
+                 </a>
+                 <a href="tel:+0123-456789" class="flex gap-2">
+                  <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.875 5.625C1.875 12.5283 7.47167 18.125 14.375 18.125H16.25C16.7473 18.125 17.2242 17.9275 17.5758 17.5758C17.9275 17.2242 18.125 16.7473 18.125 16.25V15.1067C18.125 14.6767 17.8325 14.3017 17.415 14.1975L13.7292 13.2758C13.3625 13.1842 12.9775 13.3217 12.7517 13.6233L11.9433 14.7008C11.7083 15.0142 11.3025 15.1525 10.935 15.0175C9.57073 14.5159 8.33179 13.7238 7.30398 12.696C6.27618 11.6682 5.48406 10.4293 4.9825 9.065C4.8475 8.6975 4.98583 8.29167 5.29917 8.05667L6.37667 7.24833C6.67917 7.0225 6.81583 6.63667 6.72417 6.27083L5.8025 2.585C5.75178 2.38225 5.63477 2.20225 5.47004 2.07361C5.30532 1.94498 5.10234 1.87507 4.89333 1.875H3.75C3.25272 1.875 2.77581 2.07254 2.42417 2.42417C2.07254 2.77581 1.875 3.25272 1.875 3.75V5.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </span>
+                 <p class="font-Montserrat text-xs md:text-base text-white">+0123-456789</p>
+                </a>
+  
+                 <a href="mailto:example@example.com" class="flex gap-2">
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.125 7.49981V8.25481C18.125 8.59335 18.0334 8.92557 17.8598 9.21622C17.6862 9.50687 17.4372 9.74511 17.1392 9.90565L11.7408 12.8123M1.875 7.49981V8.25481C1.87499 8.59335 1.96663 8.92557 2.1402 9.21622C2.31377 9.50687 2.56279 9.74511 2.86083 9.90565L8.25917 12.8123M8.25917 12.8123L9.11083 12.354C9.38409 12.2068 9.68962 12.1297 10 12.1297C10.3104 12.1297 10.6159 12.2068 10.8892 12.354L11.7417 12.8123L15.625 14.904M8.25917 12.8123L4.375 14.904M18.125 16.2498C18.125 16.7471 17.9275 17.224 17.5758 17.5756C17.2242 17.9273 16.7473 18.1248 16.25 18.1248H3.75C3.25272 18.1248 2.77581 17.9273 2.42417 17.5756C2.07254 17.224 1.875 16.7471 1.875 16.2498V7.36981C1.87514 7.03142 1.96685 6.69937 2.14041 6.40888C2.31397 6.11839 2.56291 5.88029 2.86083 5.71981L9.11083 2.35315C9.38409 2.20596 9.68962 2.12891 10 2.12891C10.3104 2.12891 10.6159 2.20596 10.8892 2.35315L17.1392 5.71981C17.4371 5.88029 17.686 6.11839 17.8596 6.40888C18.0332 6.69937 18.1249 7.03142 18.125 7.36981V16.2498Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      
+                    </span>
+                 <p class="font-Montserrat text-xs md:text-base text-white">example@example.com</p>
+                </a>
+              </div>
+              </div>
+              <div>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+
+      <!-- second footer  -->
+      <div class="bg-[#040A02] ">
+          <div class="container">
+            <div class="py-5">
+              <div class="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+
+                <div>
+                  <p class="font-Montserrat text-xs md:text-base text-white">All Rights Reserved @ Company 2023</p>
+                </div>
+                <ul class="flex space-x-3 md:space-x-6">
+                  <li>
+                    <img class="w-[38px] md:w-[62px] h-3 md:h-5" src="../assets/images/credit-card/Visa.svg" alt="">
+                  </li>
+                  <li>
+                    <img class="w-[47px] md:w-20 h-3 md:h-5" src="../assets/images/credit-card/Amex.svg" alt="">
+                  </li>
+                  <li>
+                    <img class="w-5 md:w-[32px] h-3 md:h-5" src="../assets/images/credit-card/Master.svg" alt="">
+                  </li>
+                  <li>
+                    <img class="w-[45px] md:w-[75px] h-3 md:h-5" src="../assets/images/credit-card/paypal.svg" alt="">
+                  </li>
+                  <li>
+                    <img class="w-[28px] md:w-12 h-3 md:h-5" src="../assets/images/credit-card/ApplePay.svg" alt="">
+                  </li>
+                </ul>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+      </div>
+
+      
+    </footer>
+    <!-- Footer End -->
+
+
+</body>
+
+<script src="../assets/plugin/jquery-3.6.4.min.js"></script>
+<script src="../assets/plugin/swiper-bundle.min.js"></script>
+<script src="../assets/js/common.js"></script>
+
+</html>
