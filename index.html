@@ -12,8 +12,8 @@
 
 <body>
   <!-- Navbar Start -->
-  <section id="navabr" class="fixed w-full bg-white z-200">
-    <div class="py-5 relative z-20 shadow-[0_0px_22px_rgba(119,119,119,0.19)]">
+  <section id="navabr" class="">
+    <div class="py-5 fixed w-full bg-white z-20 shadow-[0_0px_22px_rgba(119,119,119,0.19)]">
       <div class="container">
         <div class="flex justify-between items-center">
           <a href="./index.html">
@@ -42,8 +42,6 @@
               <i class="ph ph-heart text-base md:text-xl text-p_text"></i>
             </button>
             <button class="bg-[#F2F2F2] py-1 px-2 rounded-full">
-
-
               <a href="./pages/cart.html">
                 <i class="ph ph-shopping-cart text-base md:text-xl text-p_text"></i>
               </a>
@@ -62,9 +60,9 @@
 
     <!-- For Mobile  -->
 
-    <div class="menu-list bg-white hidden inset-0 z-10 h-screen w-full">
-      <div class="flex items-center justify-center z-20">
-        <ul class="gap-4 md:gap-8 space-y-3 mt-28 w-full px-6 z-20">
+    <div class="fixed menu-list bg-white hidden inset-0 z-10 h-screen w-full">
+      <div class="flex items-center justify-center z-10">
+        <ul class="gap-4 md:gap-8 space-y-3 mt-28 w-full px-6 z-10">
           <li class="font-Montserrat border-b w-full text-base text-text_color px-4 p-2.5">
             <a href="./index.html">Home</a>
           </li>
@@ -137,6 +135,7 @@
         </div>
       </div>
     </div>
+
   </section>
   <!-- Navbar End -->
 
@@ -432,10 +431,10 @@
           </div>
         </div>
 
-        <div class="flex justify-center gap-2 mb-5 xl:mb-8">
+        <div class="flex justify-end gap-2 mb-5 xl:mb-8">
           <button
             class="border border-[#EBEBEE] py-2 px-3 xl:px-4 rounded-xl font-Montserrat text-xs xl:text-base text-p_text">
-            New Arrival
+            New Arrival 
           </button>
           <button
             class="border border-[#EBEBEE] py-2 px-3 xl:px-4 rounded-xl font-Montserrat text-xs xl:text-base text-p_text">
@@ -798,9 +797,10 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lsm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 md:gap-[151px]">
+        <div class="grid grid-cols-1 lsm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 xl:gap-[151px]">
+
           <div
-            class="border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
+            class="process process1 relative mx-auto border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
             <span>
               <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.66667" y="2.66667" width="60.6667" height="60.6667" rx="30.3333" fill="#699C47" />
@@ -823,9 +823,18 @@
             <p class="font-Montserrat text-base text-p_text">
               Get delivered fast
             </p>
+
+            <!-- dot -->
+            <div class="dots flex items-center gap-4 absolute top-[calc(100%+20px)] lg:top-[unset] xl:left-[calc(100%+36px)]">
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9] active"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+            </div>
           </div>
+
           <div
-            class="border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
+            class="process process2 relative mx-auto border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
             <span>
               <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.66667" y="2.66667" width="60.6667" height="60.6667" rx="30.3333" fill="#699C47" />
@@ -854,9 +863,19 @@
             <p class="font-Montserrat text-base text-p_text">
               Get delivered fast
             </p>
+
+
+            <!-- dot -->
+            <div class="dots flex items-center gap-4 absolute top-[calc(100%+20px)] lg:top-[unset] xl:left-[calc(100%+36px)]">
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9] active"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+            </div>
           </div>
+
           <div
-            class="border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
+            class="process process3 relative border mx-auto border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
             <span>
               <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.66667" y="2.66667" width="60.6667" height="60.6667" rx="30.3333" fill="#699C47" />
@@ -876,9 +895,19 @@
             <p class="font-Montserrat text-base text-p_text">
               Get delivered fast
             </p>
+
+
+            <!-- dot -->
+            <div class="dots flex lsm:hidden lg:flex items-center gap-4 absolute top-[calc(100%+20px)] lg:top-[unset] xl:left-[calc(100%+36px)]">
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9] active"></span>
+              <span class="inline-block h-2 w-2 rounded-full bg-[#D9D9D9]"></span>
+            </div>
           </div>
+          
           <div
-            class="border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
+            class="process process4 relative mx-auto border border-csk w-[166px] h-[180px] xl:h-[186px] rounded-lg xl:rounded-xl flex flex-col justify-center items-center">
             <span>
               <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="2.66667" y="2.66667" width="60.6667" height="60.6667" rx="30.3333" fill="#699C47" />
@@ -912,6 +941,7 @@
               Get delivered fast
             </p>
           </div>
+
         </div>
       </div>
     </div>
