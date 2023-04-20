@@ -150,5 +150,6 @@
 .dots span.active{
   height: 10px;
   width: 10px;
-  @apply bg-primary_3;
+  background: #91BF73;
+  /* @apply bg-primary_3; */
 }
