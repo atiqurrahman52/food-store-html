@@ -188,3 +188,17 @@ $(document).ready(function(){
 
 // Featured end 
 
+
+// Filter started
+$(".filter-btn").click(function () {
+  $(this).toggleClass("active");
+  $(".filter-dropdown").toggleClass("hidden");
+});
+
+$(".categories-btn").click(function () {
+  $(this).toggleClass("active");
+  $(".categories-dropdown").toggleClass("hidden");
+});
+
+// Filter end
+

@@ -191,3 +191,15 @@
   display: inherit;
 }
 /* Featured Product End  */
+
+
+.filter-btn.active,
+.filter-btn.active p,
+.filter-btn.active i {
+  @apply text-white bg-success;
+}
+.categories-btn.active,
+.categories-btn.active p,
+.categories-btn.active i {
+  @apply text-white bg-success;
+}
