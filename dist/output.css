@@ -1040,20 +1040,12 @@ video {
   width: max-content;
 }
 
-.w-\[600px\]{
-  width: 600px;
-}
-
 .max-w-\[260px\]{
   max-width: 260px;
 }
 
 .max-w-\[356px\]{
   max-width: 356px;
-}
-
-.max-w-\[600px\]{
-  max-width: 600px;
 }
 
 .-translate-y-1\/2{
@@ -2004,6 +1996,58 @@ video {
   background: #91BF73;
   /* @apply bg-primary_3; */
 }
+
+/* Featured Product started  */
+
+.tabs{
+  /* margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background:#000;
+  border-bottom: 5px #e31837 solid; */
+}
+
+.tabs li{
+  /* display: inline-block;
+  margin:0;
+  padding: 10px 20px 5px 20px;
+  cursor: pointer;
+  font-size:1.2em;
+  line-height:2em;
+  color:#FFF; */
+}
+
+.tabs li:hover {
+  /* background:#e31837; */
+}
+
+.tabs li.current{
+  /* background: yellow;
+  color: #FFF; */
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(71 163 88 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(71 163 88 / var(--tw-text-opacity))
+}
+
+.tab-content{
+  display: none;
+  /* background: #f2f2f2;
+  padding: 15px;
+  line-height:1.4; */
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+/* Featured Product End  */
 
 .hover\:bg-primary_3:hover{
   --tw-bg-opacity: 1;

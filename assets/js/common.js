@@ -152,8 +152,6 @@ var swiper2 = new Swiper(".mySwiper2", {
 // Review tab Started 
 $(document).ready(function() {
     
-  //alert('here');
-
 $('.tabs a').click(function(){
 
    $('.panel').hide();
@@ -169,8 +167,24 @@ $('.tabs a').click(function(){
 
    $('.tabs li:first a').click();
    
-}); // end ready
+}); 
 
 
 // Review tab End 
+
+// Featured started 
+$(document).ready(function(){
+  $('ul.tabs li').on('click', function(){
+    // get the data attribute
+    var tab_id = $(this).attr('data-tab');
+    // remove the default classes
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+    // add new classes on mouse click
+    $(this).addClass('current');
+    $('#'+tab_id).addClass('current');
+  });
+});
+
+// Featured end 
 

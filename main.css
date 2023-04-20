@@ -153,3 +153,41 @@
   background: #91BF73;
   /* @apply bg-primary_3; */
 }
+
+
+
+/* Featured Product started  */
+.tabs{
+  /* margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background:#000;
+  border-bottom: 5px #e31837 solid; */
+}
+.tabs li{
+  /* display: inline-block;
+  margin:0;
+  padding: 10px 20px 5px 20px;
+  cursor: pointer;
+  font-size:1.2em;
+  line-height:2em;
+  color:#FFF; */
+}
+.tabs li:hover {
+  /* background:#e31837; */
+  }
+.tabs li.current{
+  /* background: yellow;
+  color: #FFF; */
+  @apply text-primary_3 border border-primary_3 rounded-xl px-3 py-2
+}
+.tab-content{
+  display: none;
+  /* background: #f2f2f2;
+  padding: 15px;
+  line-height:1.4; */
+}
+.tab-content.current{
+  display: inherit;
+}
+/* Featured Product End  */
