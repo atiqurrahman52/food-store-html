@@ -190,15 +190,39 @@ $(document).ready(function(){
 
 
 // Filter started
-$(".filter-btn").click(function () {
-  $(this).toggleClass("active");
-  $(".filter-dropdown").toggleClass("hidden");
-});
-
 $(".categories-btn").click(function () {
   $(this).toggleClass("active");
   $(".categories-dropdown").toggleClass("hidden");
 });
 
+$(".short-btn").click(function () {
+  $(this).toggleClass("active");
+  $(".short-dropdown").toggleClass("hidden");
+});
+
 // Filter end
+
+
+// Privacy tab started 
+$(document).ready(function() {
+    
+  //alert('here');
+
+$('.tabsPrivacy a').click(function(){
+
+   $('.privacy').hide();
+   $('.tabsPrivacy a.active').removeClass('active');
+   $(this).addClass('active');
+   
+   var panel = $(this).attr('href');
+   $(panel).fadeIn(1000);
+   
+   return false;  // prevents link action
+  
+});  // end click 
+
+   $('.tabsPrivacy li:first a').click();
+   
+}); // end ready
+// Privacy tab end 
 

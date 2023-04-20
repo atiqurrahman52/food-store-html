@@ -203,3 +203,74 @@
 .categories-btn.active i {
   @apply text-white bg-success;
 }
+
+
+/* privacy tab started  */
+.tabbedPanels { width: 600px; 
+  margin-top: 25px;
+}
+
+.panelContainer {
+clear: left;
+margin-bottom: 25px;
+border: 2px solid green;	
+background-color: #fff;
+padding: 10px;
+/* add height if you want equal panels */
+}
+
+
+
+
+/* reset ul defaults  */
+.tabsPrivacy {
+margin: 0;
+padding: 0;	
+list-style: none;	
+}
+
+/* set li properties  */
+.tabsPrivacy li {
+float: left;
+width: 75px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+/* all formatting goes inside 'a' */
+.tabsPrivacy a {
+  color: red;
+/* display: block;
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+padding:  8px;
+margin-right: 4px;  
+border: 2px solid green;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+background-color: green;
+margin-bottom: -2px;   */
+}
+
+
+.tabsPrivacy a.active {
+/* border-bottom: 2px solid white;
+background-color: #fff;
+color: #000;
+font-weight: bold; */
+@apply text-primary_3 text-5xl
+}
+
+.panel img {
+
+/* margin-top: 10px; */
+}
+
+.panel p  {
+
+/* margin-bottom: 0px; */
+}
+
+/* privacy tab end  */
