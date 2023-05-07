@@ -1805,6 +1805,11 @@ video {
   color: rgb(131 141 143 / var(--tw-text-opacity));
 }
 
+.text-\[\#A3C5E3\]{
+  --tw-text-opacity: 1;
+  color: rgb(163 197 227 / var(--tw-text-opacity));
+}
+
 .text-\[\#D64647\]{
   --tw-text-opacity: 1;
   color: rgb(214 70 71 / var(--tw-text-opacity));
@@ -2165,11 +2170,9 @@ video {
 .tabsPrivacy a.active {
   /* border-bottom: 2px solid white; */
   /* background-color: #fff; */
-  /* color: red; */
+  color:#0077E5;
   /* font-weight: bold; */
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(71 163 88 / var(--tw-text-opacity))
+  /* @apply text-primary_3 font-semibold */
 }
 
 /* privacy tab end  */

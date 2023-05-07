@@ -243,9 +243,9 @@
   /* border-bottom: 2px solid white; */
   /* background-color: #fff; */
 
-  /* color: red; */
+  color:#0077E5;
   /* font-weight: bold; */
-  @apply text-primary_3 font-semibold
+  /* @apply text-primary_3 font-semibold */
 }
 
 
