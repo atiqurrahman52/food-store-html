@@ -224,5 +224,6 @@ $('.tabsPrivacy a').click(function(){
    $('.tabsPrivacy li:first a').click();
    
 }); // end ready
+
 // Privacy tab end 
 
