@@ -663,10 +663,6 @@ video {
   margin-bottom: 14px;
 }
 
-.mb-\[2px\]{
-  margin-bottom: 2px;
-}
-
 .mb-\[6px\]{
   margin-bottom: 6px;
 }
@@ -1039,6 +1035,11 @@ video {
   width: 92px;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1046,6 +1047,10 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[22px\]{
+  width: 22px;
 }
 
 .max-w-\[260px\]{
